@@ -41,7 +41,7 @@ export const App = () => {
     const positivePercentage = countPositiveFeedbackPercentage();
     return (
     <div>
-    <Section title="Please leave feedback">
+    <Section title="Please, leave feedback">
       <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={handleChangeState} />
     </Section>
     {!totalFeedback ? (<Notification message="There is no feedback" />) : (
